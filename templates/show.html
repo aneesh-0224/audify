@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Images
+{% endblock %}
+
+{% block content%}
+
+
+<div class="container mt-4 pl-2">
+    <h1 class="text-center">Audio Results</h1>
+    <div class="my-container pl-2">
+        {% for i in audio_list %}
+        <div>
+            <h6 class="btn btn-primary btn-lg">{{i}}</h6>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+ 
+<div class="container mt-4 pl-2">
+    <h1 class="text-center">Music Results</h1>
+    <div class="my-container pl-2">
+        {% for i in music_list %}
+        <div>
+            <h6 class="btn btn-primary btn-lg">{{i}}</h6>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+ 
+{%endblock%}
